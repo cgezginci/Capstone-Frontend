@@ -302,7 +302,7 @@ function Appointment() {
               </tr>
             </thead>
             <tbody>
-              {appointment.map((appointment) => (
+              {appointment?.map((appointment) => (
                 <tr key={appointment.id}>
                   <td>{appointment.date}</td>
                   <td>{appointment.doctorName}</td>
@@ -351,7 +351,7 @@ function Appointment() {
                 <option value="" disabled>
                   Bir doktor seçiniz
                 </option>
-                {doctor.map((doctor) => (
+                {doctor?.map((doctor) => (
                   <option key={doctor.id} value={doctor.id}>
                     {doctor.name}
                   </option>
@@ -371,7 +371,7 @@ function Appointment() {
                 <option value="" disabled>
                   Bir hayvan seçiniz
                 </option>
-                {animal.map((animal) => (
+                {animal?.map((animal) => (
                   <option key={animal.id} value={animal.id}>
                     {animal.name}
                   </option>
@@ -410,7 +410,7 @@ function Appointment() {
                 <option value="" disabled>
                   Bir doktor seçiniz
                 </option>
-                {doctor.map((doctor) => (
+                {doctor?.map((doctor) => (
                   <option key={doctor.id} value={doctor.id}>
                     {doctor.name}
                   </option>
@@ -434,7 +434,7 @@ function Appointment() {
                 <option value="" disabled>
                   Bir hayvan seçiniz
                 </option>
-                {animal.map((animal) => (
+                {animal?.map((animal) => (
                   <option key={animal.id} value={animal.id}>
                     {animal.name}
                   </option>

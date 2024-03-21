@@ -161,7 +161,7 @@ function Report() {
               </tr>
             </thead>
             <tbody>
-              {report.map((report) => (
+              {report?.map((report) => (
                 <tr key={report.id}>
                   <td>{report.title}</td>
                   <td>{report.diagnosis}</td>

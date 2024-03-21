@@ -253,7 +253,7 @@ function Animal() {
               </tr>
             </thead>
             <tbody>
-              {animal.map((animal) => (
+              {animal?.map((animal) => (
                 <tr key={animal.id}>
                   <td>{animal.name}</td>
                   <td>{animal.species}</td>
@@ -340,7 +340,7 @@ function Animal() {
                 <option value="" disabled>
                   Bir müşteri seçiniz
                 </option>
-                {customer.map((customer) => (
+                {customer?.map((customer) => (
                   <option key={customer.id} value={customer.id}>
                     {customer.name}
                   </option>
@@ -413,7 +413,7 @@ function Animal() {
                 <option value="" disabled>
                   Bir müşteri seçiniz
                 </option>
-                {customer.map((customer) => (
+                {customer?.map((customer) => (
                   <option key={customer.id} value={customer.id}>
                     {customer.name}
                   </option>

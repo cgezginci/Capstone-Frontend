@@ -199,7 +199,7 @@ function Customer() {
               </tr>
             </thead>
             <tbody>
-              {customer.map((customer) => (
+              {customer?.map((customer) => (
                 <tr key={customer.id}>
                   <td>{customer.name}</td>
                   <td>{customer.phone}</td>

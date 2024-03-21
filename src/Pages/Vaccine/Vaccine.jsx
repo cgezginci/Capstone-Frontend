@@ -305,7 +305,7 @@ function Vaccine() {
               </tr>
             </thead>
             <tbody>
-              {vaccine.map((vaccine) => (
+              {vaccine?.map((vaccine) => (
                 <tr key={vaccine.id}>
                   <td>{vaccine.name}</td>
                   <td>{vaccine.code}</td>
@@ -379,7 +379,7 @@ function Vaccine() {
                 }}
               >
                 <option value="">Bir hayvan seçiniz</option>
-                {animal.map((animal) => (
+                {animal?.map((animal) => (
                   <option key={animal.id} value={animal.id}>
                     {animal.name}
                   </option>
@@ -401,7 +401,7 @@ function Vaccine() {
                 }}
               >
                 <option value="">Bir rapor seçiniz</option>
-                {report.map((report) => (
+                {report?.map((report) => (
                   <option key={report.id} value={report.id}>
                     {report.title}
                   </option>
@@ -458,7 +458,7 @@ function Vaccine() {
                 <option value="" disabled>
                   Bir hayvan seçiniz
                 </option>
-                {animal.map((animal) => (
+                {animal?.map((animal) => (
                   <option key={animal.id} value={animal.id}>
                     {animal.name}
                   </option>
@@ -482,7 +482,7 @@ function Vaccine() {
                 <option value="" disabled>
                   Bir rapor seçiniz
                 </option>
-                {report.map((report) => (
+                {report?.map((report) => (
                   <option key={report.id} value={report.id}>
                     {report.title}
                   </option>

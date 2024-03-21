@@ -303,7 +303,7 @@ function Doctor() {
               </tr>
             </thead>
             <tbody>
-              {doctor.map((doctor) => (
+              {doctor?.map((doctor) => (
                 <tr key={doctor.id}>
                   <td>{doctor.name}</td>
                   <td>{doctor.phone}</td>
@@ -423,7 +423,7 @@ function Doctor() {
               </tr>
             </thead>
             <tbody>
-              {availableDate.map((availableDate) => (
+              {availableDate?.map((availableDate) => (
                 <tr key={availableDate.id}>
                   <td>{availableDate.date}</td>
                   <td>{availableDate.doctorName}</td>
@@ -473,7 +473,7 @@ function Doctor() {
                 <option value="" disabled>
                   Bir doktor seçiniz
                 </option>
-                {doctor.map((doctor) => (
+                {doctor?.map((doctor) => (
                   <option key={doctor.id} value={doctor.id}>
                     {doctor.name}
                   </option>
@@ -514,7 +514,7 @@ function Doctor() {
                 <option value="" disabled>
                   Bir doktor seçiniz
                 </option>
-                {doctor.map((doctor) => (
+                {doctor?.map((doctor) => (
                   <option key={doctor.id} value={doctor.id}>
                     {doctor.name}
                   </option>
